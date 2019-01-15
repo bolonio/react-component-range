@@ -48,7 +48,7 @@ export default App
 | required       | bollean  | `false` | A Boolean which, if true, indicates that the input must have a value before the form can be submitted                                  |
 | tabIndex       | number   |         | A numeric value providing guidance to the user agent as to the order in which controls receive focus when the user presses the Tab key |
 
-### Contributing
+## Contributing
 
 Feel free to submit issues and enhancement requests.
 
