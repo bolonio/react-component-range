@@ -30,10 +30,6 @@ class App extends Component {
 export default App
 ```
 
-## Demo
-
-A CodePen demo is available [here](http://codepen.io/davidchin/full/GpNvqw/).
-
 ## Props
 
 | Name           | Type     | Default | Description                                                                                                                            |
