@@ -1,0 +1,51 @@
+@webkit-slider-thumb-size: 18px;
+@webkit-slider-track-height: 6px;
+
+@c-disabled: #90addb;
+@c-track: #e9eef8;
+@c-thumb: #00a4e8;
+
+.wh-range-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .wh-range {
+    appearance: none;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+
+    &:disabled {
+      &::range-thumb {
+        background: @c-disabled;
+      }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // Slider thumb
+    ///////////////////////////////////////////////////////////////////////////////
+    &::range-thumb {
+      appearance: none;
+      width: @webkit-slider-thumb-size;
+      height: @webkit-slider-thumb-size;
+      border-radius: 50%;
+      background: @c-thumb;
+      cursor: pointer;
+      transition: background 0.15s ease-in-out;
+      margin-top: -6px;
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // Slider track
+    ///////////////////////////////////////////////////////////////////////////////
+    &::range-track {
+      background: @c-track;
+      border: 0;
+      height: @webkit-slider-track-height;
+      border-radius: 5px;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+}

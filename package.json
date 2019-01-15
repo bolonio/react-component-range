@@ -1,0 +1,66 @@
+{
+  "name": "react-component-range",
+  "version": "0.5.0",
+  "description": "Simple and minimal React input range component",
+  "keywords": [
+    "react",
+    "react-component",
+    "range-slider",
+    "input-range",
+    "input",
+    "form",
+    "range",
+    "slider",
+    "number"
+  ],
+  "tags": [
+    "react",
+    "react-component",
+    "input",
+    "range",
+    "input-range"
+  ],
+  "main": "build/index.js",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bolonio/react-component-range.git"
+  },
+  "author": "Adrián Bolonio <bolonio85@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bolonio/react-component-range/issues"
+  },
+  "homepage": "https://github.com/bolonio/react-component-range#readme",
+  "peerDependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-runtime": "^6.26.0",
+    "css-loader": "^1.0.1",
+    "cssnano": "^4.1.7",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "postcss-input-range": "^4.0.0",
+    "postcss-loader": "^3.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "style-loader": "^0.23.1"
+  },
+  "dependencies": {
+    "react-scripts": "1.1.4"
+  }
+}
