@@ -1,9 +1,9 @@
 @webkit-slider-thumb-size: 18px;
 @webkit-slider-track-height: 6px;
 
-@c-disabled: #90addb;
-@c-track: #e9eef8;
-@c-thumb: #00a4e8;
+@disabledColor: #90addb;
+@trackColor: #e9eef8;
+@thumbColor: #00a4e8;
 
 .wh-range-container {
   display: flex;
@@ -18,7 +18,7 @@
 
     &:disabled {
       &::range-thumb {
-        background: @c-disabled;
+        background: @disabledColor;
       }
     }
 
@@ -30,7 +30,7 @@
       width: @webkit-slider-thumb-size;
       height: @webkit-slider-thumb-size;
       border-radius: 50%;
-      background: @c-thumb;
+      background: @thumbColor;
       cursor: pointer;
       transition: background 0.15s ease-in-out;
       margin-top: -6px;
@@ -40,7 +40,7 @@
     // Slider track
     ///////////////////////////////////////////////////////////////////////////////
     &::range-track {
-      background: @c-track;
+      background: @trackColor;
       border: 0;
       height: @webkit-slider-track-height;
       border-radius: 5px;

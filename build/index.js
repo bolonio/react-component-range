@@ -296,7 +296,7 @@ __webpack_require__(9);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/** A basic input (range) component that should render nicely on any platform */
+/** Simple and minimal React input range component */
 var Range = function Range(props) {
   return _react2.default.createElement(
     "div",
@@ -322,51 +322,44 @@ var Range = function Range(props) {
 };
 
 Range.propTypes = {
-  /** Specifies the id */
+  /** The id of the input (range) */
   id: _propTypes2.default.string,
-  /** Specifies the name */
+  /** The input's name, to identify the input in the data submitted with the form's data */
   name: _propTypes2.default.string,
-  /** Specifies the min value */
+  /** The minimum permitted value */
   min: _propTypes2.default.number,
-  /** Specifies the max value */
+  /** The maximum permitted value */
   max: _propTypes2.default.number,
-  /** Specifies the step */
+  /** The stepping interval, used both for user interface and validation purposes */
   step: _propTypes2.default.number,
-  /** Specifies the value */
+  /** The input's current value */
   value: _propTypes2.default.number,
-  /** Specifies the initial value */
+  /** The input's initial value */
   defaultValue: _propTypes2.default.number,
-  /** Specifies the callback action when the value is changed */
+  /** The callback action to be performed when the value changes. It returns the current value. */
   onChange: _propTypes2.default.func,
-  /** Specifies if the range is disabled */
-  disabled: _propTypes2.default.bool,
-  /** Specifies the aria-label */
+  /** The accesibility aria-label property of the input */
   ariaLabel: _propTypes2.default.string,
-  /** Specifies the aria-labelledby */
+  /** The accesibility aria-labelledby property of the input */
   ariaLabelledby: _propTypes2.default.string,
-  /** Specifies the size of the thumb */
-  thumbSize: _propTypes2.default.number,
-  /** Specifies the color of the thumb */
-  thumbColor: _propTypes2.default.string,
-  /** Specifies the height of the track */
-  trackHeight: _propTypes2.default.number,
-  /** Specifies the color of the track */
-  trackColor: _propTypes2.default.string,
+  /** A Boolean attribute which is present if the input should be disabled */
+  disabled: _propTypes2.default.bool,
+  /** A Boolean which, if true, indicates that the input must have a value before the form can be submitted */
   required: _propTypes2.default.bool,
+  /** A numeric value providing guidance to the user agent as to the order in which controls receive focus when the user presses the Tab key */
   tabIndex: _propTypes2.default.number
-  /*
-  Range defaultProps = {
-      id: null,
-      min: 0,
-      max: 100,
-      step: 1,
-      sliderColor: "#B9B9B9",
-      trackColor: "#009688",
-      thumbColor: "#009688",
-      sliderSize: 4
-    }
-  */
-};exports.default = Range;
+};
+
+Range.defaultProps = {
+  min: 0,
+  max: 100,
+  defaultValue: 0,
+  step: 1,
+  disabled: false,
+  required: false
+};
+
+exports.default = Range;
 
 /***/ }),
 /* 3 */

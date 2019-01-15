@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import "./styles.less"
 
-/** A basic input (range) component that should render nicely on any platform */
+/** Simple and minimal React input range component */
 const Range = props => {
   return (
     <div className="wh-range-container">
@@ -27,49 +27,41 @@ const Range = props => {
 }
 
 Range.propTypes = {
-  /** Specifies the id */
+  /** The id of the input (range) */
   id: PropTypes.string,
-  /** Specifies the name */
+  /** The input's name, to identify the input in the data submitted with the form's data */
   name: PropTypes.string,
-  /** Specifies the min value */
+  /** The minimum permitted value */
   min: PropTypes.number,
-  /** Specifies the max value */
+  /** The maximum permitted value */
   max: PropTypes.number,
-  /** Specifies the step */
+  /** The stepping interval, used both for user interface and validation purposes */
   step: PropTypes.number,
-  /** Specifies the value */
+  /** The input's current value */
   value: PropTypes.number,
-  /** Specifies the initial value */
+  /** The input's initial value */
   defaultValue: PropTypes.number,
-  /** Specifies the callback action when the value is changed */
+  /** The callback action to be performed when the value changes. It returns the current value. */
   onChange: PropTypes.func,
-  /** Specifies if the range is disabled */
-  disabled: PropTypes.bool,
-  /** Specifies the aria-label */
+  /** The accesibility aria-label property of the input */
   ariaLabel: PropTypes.string,
-  /** Specifies the aria-labelledby */
+  /** The accesibility aria-labelledby property of the input */
   ariaLabelledby: PropTypes.string,
-  /** Specifies the size of the thumb */
-  thumbSize: PropTypes.number,
-  /** Specifies the color of the thumb */
-  thumbColor: PropTypes.string,
-  /** Specifies the height of the track */
-  trackHeight: PropTypes.number,
-  /** Specifies the color of the track */
-  trackColor: PropTypes.string,
+  /** A Boolean attribute which is present if the input should be disabled */
+  disabled: PropTypes.bool,
+  /** A Boolean which, if true, indicates that the input must have a value before the form can be submitted */
   required: PropTypes.bool,
+  /** A numeric value providing guidance to the user agent as to the order in which controls receive focus when the user presses the Tab key */
   tabIndex: PropTypes.number
 }
-/*
-Range defaultProps = {
-    id: null,
-    min: 0,
-    max: 100,
-    step: 1,
-    sliderColor: "#B9B9B9",
-    trackColor: "#009688",
-    thumbColor: "#009688",
-    sliderSize: 4
-  }
-*/
+
+Range.defaultProps = {
+  min: 0,
+  max: 100,
+  defaultValue: 0,
+  step: 1,
+  disabled: false,
+  required: false
+}
+
 export default Range

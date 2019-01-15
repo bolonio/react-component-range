@@ -36,25 +36,21 @@ A CodePen demo is available [here](http://codepen.io/davidchin/full/GpNvqw/).
 
 ## Props
 
-| Name           | Type     | Default   | Description                                                                                                                            |
-| -------------- | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| id             | string   |           | The id of the input (range)                                                                                                            |
-| name           | string   |           | The input's name, to identify the input in the data submitted with the form's data                                                     |
-| min            | number   | `0`       | The minimum permitted value                                                                                                            |
-| max            | number   | `100`     | The maximum permitted value                                                                                                            |
-| step           | number   | `1`       | The stepping interval, used both for user interface and validation purposes                                                            |
-| onChange       | function |           | The callback action to be performed when the value changes. It returns the current value.                                              |
-| value          | number   |           | The input's current value                                                                                                              |
-| defaultValue   | number   | `0`       | The input's initial value                                                                                                              |
-| thumbSize      | number   | `18px`    | The size of the thumb.                                                                                                                 |
-| trackHeight    | number   | `6px`     | The height of the track                                                                                                                |
-| trackColor     | string   | `#90addb` | The color of the track                                                                                                                 |
-| thumbColor     | string   | `#00a4e8` | The color of the thumb                                                                                                                 |
-| ariaLabel      | string   |           | The accesibility aria-label property of the input                                                                                      |
-| ariaLabelledby | string   |           | The accesibility aria-labelledby property of the input                                                                                 |
-| disabled       | boolean  | `false`   | A Boolean attribute which is present if the input should be disabled                                                                   |
-| required       | bollean  | `false`   | A Boolean which, if true, indicates that the input must have a value before the form can be submitted                                  |
-| tabIndex       | number   |           | A numeric value providing guidance to the user agent as to the order in which controls receive focus when the user presses the Tab key |
+| Name           | Type     | Default | Description                                                                                                                            |
+| -------------- | -------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| id             | string   |         | The id of the input (range)                                                                                                            |
+| name           | string   |         | The input's name, to identify the input in the data submitted with the form's data                                                     |
+| min            | number   | `0`     | The minimum permitted value                                                                                                            |
+| max            | number   | `100`   | The maximum permitted value                                                                                                            |
+| step           | number   | `1`     | The stepping interval, used both for user interface and validation purposes                                                            |
+| onChange       | function |         | The callback action to be performed when the value changes. It returns the current value.                                              |
+| value          | number   |         | The input's current value                                                                                                              |
+| defaultValue   | number   | `0`     | The input's initial value                                                                                                              |
+| ariaLabel      | string   |         | The accesibility aria-label property of the input                                                                                      |
+| ariaLabelledby | string   |         | The accesibility aria-labelledby property of the input                                                                                 |
+| disabled       | boolean  | `false` | A Boolean attribute which is present if the input should be disabled                                                                   |
+| required       | bollean  | `false` | A Boolean which, if true, indicates that the input must have a value before the form can be submitted                                  |
+| tabIndex       | number   |         | A numeric value providing guidance to the user agent as to the order in which controls receive focus when the user presses the Tab key |
 
 ### Contributing
 
@@ -74,3 +70,4 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 
 - Typescript component
 - Write tests for the component
+- Personalization (color and size)
