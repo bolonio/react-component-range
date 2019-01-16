@@ -21,6 +21,8 @@ const Range = props => {
         aria-label={props.ariaLabel}
         arial-labelledby={props.ariaLabelledby}
         disabled={props.disabled}
+        required={props.required}
+        tabindex={props.tabIndex}
       />
     </div>
   )

@@ -316,7 +316,9 @@ var Range = function Range(props) {
       },
       "aria-label": props.ariaLabel,
       "arial-labelledby": props.ariaLabelledby,
-      disabled: props.disabled
+      disabled: props.disabled,
+      required: props.required,
+      tabindex: props.tabIndex
     })
   );
 };
