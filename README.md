@@ -1,7 +1,7 @@
 # react-component-range
 
 [![npm version](https://img.shields.io/npm/v/react-component-range.svg?style=flat)](https://www.npmjs.com/package/react-component-range)
-[![Build Status](https://travis-ci.org/davidchin/react-component-range.svg?branch=master)](https://travis-ci.org/bolonio/react-component-range)
+[![Build Status](https://travis-ci.org/bolonio/react-component-range.svg?branch=master)](https://travis-ci.org/bolonio/react-component-range)
 
 React Component Range is a simple and minimal React input range component
 
