@@ -1,34 +1,35 @@
-import React, { Component } from "react"
-import PropTypes from "prop-types"
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-import "./styles.less"
+import "./styles.less";
 
 /** Simple and minimal React input range component */
-const Range = props => {
+const ReactRange = props => {
   return (
-    <div className="wh-range-container">
-      <input
-        className="wh-range"
-        id={props.id}
-        name={props.name}
-        step={props.step}
-        type="range"
-        value={props.value}
-        defaultValue={props.defaultValue}
-        min={props.min}
-        max={props.max}
-        onChange={e => props.onChange(e.target.value)}
-        aria-label={props.ariaLabel}
-        arial-labelledby={props.ariaLabelledby}
-        disabled={props.disabled}
-        required={props.required}
-        tabindex={props.tabIndex}
-      />
-    </div>
-  )
-}
+    <input
+      className="input-range"
+      id={props.id}
+      name={props.name}
+      step={props.step}
+      type="range"
+      value={props.value}
+      aria-valuenow={props.value}
+      defaultValue={props.defaultValue}
+      min={props.min}
+      aria-valuemin={props.min}
+      max={props.max}
+      aria-valuemax={props.max}
+      onChange={e => props.onChange(e.target.value)}
+      aria-label={props.ariaLabel}
+      arial-labelledby={props.ariaLabelledby}
+      disabled={props.disabled}
+      required={props.required}
+      tabIndex={props.tabIndex}
+    />
+  );
+};
 
-Range.propTypes = {
+ReactRange.propTypes = {
   /** The id of the input (range) */
   id: PropTypes.string,
   /** The input's name, to identify the input in the data submitted with the form's data */
@@ -55,15 +56,16 @@ Range.propTypes = {
   required: PropTypes.bool,
   /** A numeric value providing guidance to the user agent as to the order in which controls receive focus when the user presses the Tab key */
   tabIndex: PropTypes.number
-}
+};
 
-Range.defaultProps = {
+ReactRange.defaultProps = {
   min: 0,
   max: 100,
   defaultValue: 0,
   step: 1,
   disabled: false,
-  required: false
-}
+  required: false,
+  onChange: () => {}
+};
 
-export default Range
+export default ReactRange;

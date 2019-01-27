@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/react-component-range.svg?style=flat)](https://www.npmjs.com/package/react-component-range)
 
-React Component Range is a Simple and minimal React input range component
+React Component Range is a simple and minimal React input range component
 
 ## Install
 
@@ -11,42 +11,47 @@ React Component Range is a Simple and minimal React input range component
 ## Usage
 
 ```jsx
-import React, { Component } from "react"
-import Range from "react-component-range"
+import React, { Component } from "react";
+import ReactRange from "react-component-range";
 
 class App extends Component {
+  onChange = value => {
+    console.debug("Value: ", value);
+  };
+
   render() {
     return (
-      <Range
+      <ReactRange
         min={0}
         max={100}
         defaultValue={50}
-        onChange={val => console.debug(val)}
+        ariaLabel="Slider to adjust the volume"
+        onChange={this.onChange}
       />
-    )
+    );
   }
 }
 
-export default App
+export default App;
 ```
 
 ## Props
 
-| Name           | Type     | Default | Description                                                                                                                            |
-| -------------- | -------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| id             | string   |         | The id of the input (range)                                                                                                            |
-| name           | string   |         | The input's name, to identify the input in the data submitted with the form's data                                                     |
-| min            | number   | `0`     | The minimum permitted value                                                                                                            |
-| max            | number   | `100`   | The maximum permitted value                                                                                                            |
-| step           | number   | `1`     | The stepping interval, used both for user interface and validation purposes                                                            |
-| onChange       | function |         | The callback action to be performed when the value changes. It returns the current value.                                              |
-| value          | number   |         | The input's current value                                                                                                              |
-| defaultValue   | number   | `0`     | The input's initial value                                                                                                              |
-| ariaLabel      | string   |         | The accesibility aria-label property of the input                                                                                      |
-| ariaLabelledby | string   |         | The accesibility aria-labelledby property of the input                                                                                 |
-| disabled       | boolean  | `false` | A Boolean attribute which is present if the input should be disabled                                                                   |
-| required       | bollean  | `false` | A Boolean which, if true, indicates that the input must have a value before the form can be submitted                                  |
-| tabIndex       | number   |         | A numeric value providing guidance to the user agent as to the order in which controls receive focus when the user presses the Tab key |
+| Name           | Type     | Default    | Description                                                                                                                            |
+| -------------- | -------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| id             | string   |            | The id of the input (range)                                                                                                            |
+| name           | string   |            | The input's name, to identify the input in the data submitted with the form's data                                                     |
+| min            | number   | `0`        | The minimum permitted value                                                                                                            |
+| max            | number   | `100`      | The maximum permitted value                                                                                                            |
+| step           | number   | `1`        | The stepping interval, used both for user interface and validation purposes                                                            |
+| onChange       | function | `() => {}` | The callback action to be performed when the value changes. It returns the current value.                                              |
+| value          | number   |            | The input's current value                                                                                                              |
+| defaultValue   | number   | `0`        | The input's initial value                                                                                                              |
+| ariaLabel      | string   |            | The accesibility aria-label property of the input                                                                                      |
+| ariaLabelledby | string   |            | The accesibility aria-labelledby property of the input                                                                                 |
+| disabled       | boolean  | `false`    | A Boolean attribute which is present if the input should be disabled                                                                   |
+| required       | bollean  | `false`    | A Boolean which, if true, indicates that the input must have a value before the form can be submitted                                  |
+| tabIndex       | number   |            | A numeric value providing guidance to the user agent as to the order in which controls receive focus when the user presses the Tab key |
 
 ## Contributing
 

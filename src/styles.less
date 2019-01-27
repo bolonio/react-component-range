@@ -5,48 +5,41 @@
 @trackColor: #e9eef8;
 @thumbColor: #00a4e8;
 
-.wh-range-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px 0;
+.input-range {
+  appearance: none;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
 
-  .wh-range {
-    appearance: none;
-    width: 100%;
-    outline: none;
-    cursor: pointer;
-
-    &:disabled {
-      &::range-thumb {
-        background: @disabledColor;
-      }
-    }
-
-    ///////////////////////////////////////////////////////////////////////////////
-    // Slider thumb
-    ///////////////////////////////////////////////////////////////////////////////
+  &:disabled {
     &::range-thumb {
-      appearance: none;
-      width: @webkit-slider-thumb-size;
-      height: @webkit-slider-thumb-size;
-      border-radius: 50%;
-      background: @thumbColor;
-      cursor: pointer;
-      transition: background 0.15s ease-in-out;
-      margin-top: -6px;
+      background: @disabledColor;
     }
+  }
 
-    ///////////////////////////////////////////////////////////////////////////////
-    // Slider track
-    ///////////////////////////////////////////////////////////////////////////////
-    &::range-track {
-      background: @trackColor;
-      border: 0;
-      height: @webkit-slider-track-height;
-      border-radius: 5px;
-      padding: 0;
-      cursor: pointer;
-    }
+  ///////////////////////////////////////////////////////////////////////////////
+  // Slider thumb
+  ///////////////////////////////////////////////////////////////////////////////
+  &::range-thumb {
+    appearance: none;
+    width: @webkit-slider-thumb-size;
+    height: @webkit-slider-thumb-size;
+    border-radius: 50%;
+    background: @thumbColor;
+    cursor: pointer;
+    transition: background 0.15s ease-in-out;
+    margin-top: -6px;
+  }
+
+  ///////////////////////////////////////////////////////////////////////////////
+  // Slider track
+  ///////////////////////////////////////////////////////////////////////////////
+  &::range-track {
+    background: @trackColor;
+    border: 0;
+    height: @webkit-slider-track-height;
+    border-radius: 5px;
+    padding: 0;
+    cursor: pointer;
   }
 }
