@@ -1,10 +1,11 @@
 {
   "name": "react-component-range",
   "version": "0.5.0",
-  "description": "Simple and minimal React input range component",
+  "description": "React Component Range is a simple and minimal React input range component",
   "keywords": [
     "react",
     "react-component",
+    "react-input",
     "range-slider",
     "input-range",
     "input",
@@ -18,7 +19,8 @@
     "react-component",
     "input",
     "range",
-    "input-range"
+    "input-range",
+    "react-input"
   ],
   "main": "build/index.js",
   "scripts": {
