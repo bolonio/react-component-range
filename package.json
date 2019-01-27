@@ -26,7 +26,9 @@
   "scripts": {
     "start": "webpack --watch --mode development",
     "build": "webpack --mode production",
-    "test": "jest"
+    "prepublishOnly": "npm run qa",
+    "qa": "npm test && npm run build",
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
