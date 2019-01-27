@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReactRange renders correctly with no props 1`] = `
+<input
+  aria-valuemax={100}
+  aria-valuemin={0}
+  className="input-range"
+  defaultValue={0}
+  disabled={false}
+  max={100}
+  min={0}
+  onChange={[Function]}
+  required={false}
+  step={1}
+  type="range"
+/>
+`;
